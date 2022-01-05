@@ -288,6 +288,8 @@ input[type='button'].link-like-butto:hover {
     text-shadow: none;
 }
 
+
+
 @media (max-width: 640px) {
     .attach-or-paste .link-container a {
         position: relative;
