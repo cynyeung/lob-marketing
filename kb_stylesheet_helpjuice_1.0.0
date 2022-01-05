@@ -1,0 +1,980 @@
+/* ============================================================================
+   MAIN STYLESHEET
+   ========================================================================= */
+/**
+* Lob Brand Typography
+*
+* Currently being fed from:
+* https://www.lob.com/style-guide
+*
+* Last updated November 12, 2021
+*/
+/* ============================================================================
+   CUSTOM LOB THEME STYLES
+   ========================================================================= */
+/* ============================================================================
+   @SETTINGS -> TYPOGRAPHY
+   ========================================================================= */
+/**
+* Lob Brand Typography
+*
+* Currently being fed from:
+* https://www.lob.com/style-guide
+*
+* Last updated November 12, 2021
+*/
+/** =====================================
+	VARIABLES
+	================================== */
+html, body {
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 24px;
+}
+
+/* ============================================================================
+   @SHARED -> COLORS
+   ========================================================================= */
+/**
+ * Lob Brand Colors
+ *
+ * Currently being fed from:
+ * https://www.lob.com/style-guide
+ *
+ * Last updated November 12, 2021
+ */
+.icon-catID183724 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700986/icon_category_welcome-to-lob.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID216509 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700985/icon_category_account-settings-management.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID183711 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700984/icon_category_developer-documentation.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID183708 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700982/icon_category_print-mail.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID196228 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700979/icon_category_address-verification.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID196230 {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700948/icon_category_resources.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-checkmark {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700992/icon_feedback_positive.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-xmark {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700991/icon_feedback_negative.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-comment {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1700990/icon_feedback_comment.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-search {
+  background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/9583/1704629/icon_search.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-catID183724 {
+  height: 43.76px;
+  width: 40.87px;
+  background-size: 100% 43.76px;
+}
+
+.icon-catID216509 {
+  height: 32px;
+  width: 46px;
+  background-size: 100% 32px;
+}
+
+.icon-catID183711 {
+  height: 50px;
+  width: 36.55px;
+  background-size: 100% 50px;
+}
+
+.icon-catID183708 {
+  height: 46.83px;
+  width: 44px;
+  background-size: 100% 46.83px;
+}
+
+.icon-catID196228 {
+  height: 46.32px;
+  width: 50.79px;
+  background-size: 100% 46.32px;
+}
+
+.icon-catID196230 {
+  height: 38px;
+  width: 19px;
+  background-size: 100% 38px;
+}
+
+.icon-checkmark {
+  height: 10.78px;
+  width: 14.14px;
+  background-size: 100% 10.78px;
+}
+
+.icon-xmark {
+  height: 10.78px;
+  width: 10.78px;
+  background-size: 100% 10.78px;
+}
+
+.icon-comment {
+  height: 16px;
+  width: 17px;
+  background-size: 100% 16px;
+}
+
+.icon-search {
+  height: 17.8px;
+  width: 18.06px;
+  background-size: 100% 17.8px;
+}
+
+/* ============================================================================
+   @SHARED -> TYPOGRAPHY
+   ========================================================================= */
+/**
+* Lob Brand Typography
+*
+* Currently being fed from:
+* https://www.lob.com/style-guide
+*
+* Last updated November 12, 2021
+*/
+@font-face {
+  font-family: "Larsseit";
+  src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Larsseit";
+  src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Larsseit";
+  src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Larsseit";
+  src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Larsseit";
+  src: url("https://s3-us-west-2.amazonaws.com/public.lob.com/marketing/fonts/Type+Dynamic+-+Larsseit+Bold.otf") format("opentype");
+  font-weight: 700;
+}
+h1, .typography-h1 {
+  color: #27333C;
+  font-family: "Larsseit", sans-serif;
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  h1, .typography-h1 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h2, .typography-h2 {
+  color: #5F83A5;
+  font-family: "Larsseit", sans-serif;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  h2, .typography-h2 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h3, .typography-h3 {
+  color: #3A5F83;
+  font-family: "Larsseit", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  h3, .typography-h3 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h4, .typography-h4 {
+  color: #27333C;
+  font-family: "Larsseit", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  h4, .typography-h4 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h5, .typography-h5 {
+  color: #5F83A5;
+  font-family: "Larsseit", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  h5, .typography-h5 {
+    font-family: "Larsseit", sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+h6, .typography-h6 {
+  color: #27333C;
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.intro-text {
+  color: #357288;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-large {
+  color: #27333C;
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  .text-large {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.body-text {
+  color: #27333C;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.small-text {
+  color: #324350;
+  font-family: "Larsseit", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-caps {
+  color: #27333C;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.standard-link {
+  color: #0099D7;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.standard-link:hover {
+  color: #1876DB;
+}
+
+.link-underline {
+  color: #1876DB;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.link-underline:hover {
+  color: #0099D7;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #1876DB;
+}
+
+.enable-feedback {
+  margin-top: 0;
+}
+.enable-feedback i {
+  margin-left: 20px;
+}
+.enable-feedback i:hover {
+  text-decoration: none;
+}
+
+.new_feedback, .feedback {
+  display: inline-block;
+}
+
+.new_feedback {
+  margin-left: 50px;
+}
+
+.feedback {
+  margin-left: 20px;
+}
+
+/* ============================================================================
+   @COMPONENTS -> LANDING PAGE SEARCH
+   ========================================================================= */
+/**
+ * Lob Knowledge Base, Landing Page Search
+ *
+ * Currently being fed from:
+ * https://www.figma.com/file/MeIpacrlKSMyqSuCCu2zat/Knowledge-Base%2C-HelpJuice?node-id=12%3A141
+ *
+ * Last updated November 15, 2021
+ */
+.section-categories {
+  background-color: #EBF0F6;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.cards-list {
+  background-color: #EBF0F6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+@media only screen and (max-width: 1279px) {
+  .cards-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+  }
+}
+.cards-list .card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.cards-list .card header {
+  margin-bottom: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+}
+.cards-list .card p {
+  margin-bottom: 72px;
+}
+.cards-list .card ul > li {
+  list-style-type: none;
+}
+
+/* ============================================================================
+   @COMPONENTS -> LANDING PAGE FEATURED ARTICLES SECTION
+   ========================================================================= */
+/**
+ * Lob Knowledge Base, Landing Featured Articles Section
+ *
+ * Currently being fed from:
+ * https://www.figma.com/file/MeIpacrlKSMyqSuCCu2zat/Knowledge-Base%2C-HelpJuice?node-id=12%3A141
+ *
+ * Last updated December 7, 2021
+ */
+.section-featured-articles .featured-articles-list {
+  padding-top: 30px;
+}
+.section-featured-articles .link-underline {
+  color: #1876DB;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.section-featured-articles .link-underline:hover {
+  color: #0099D7;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #1876DB;
+}
+
+/* ============================================================================
+   @COMPONENTS -> LANDING PAGE NAVIGATION
+   ========================================================================= */
+/**
+ * Lob Knowledge Base, Landing Page Navigation
+ *
+ * Currently being fed from:
+ * https://www.figma.com/file/MeIpacrlKSMyqSuCCu2zat/Knowledge-Base%2C-HelpJuice?node-id=12%3A141
+ *
+ * Last updated November 12, 2021
+ */
+#navbar .container {
+  position: relative;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  #navbar .container {
+    padding: 26px 0;
+  }
+}
+#navbar #branding .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+#navbar #branding .logo .altLogo {
+  display: block;
+  width: 208px;
+  height: 44px;
+  color: #0f2fa9;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-image: url(https://uploads-ssl.webflow.com/5e1e5c62fa3d4447af417098/617349347a543495ab8df9a9_lob-kb-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#navbar #branding .menu-icon {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  #navbar #branding .menu-icon {
+    display: none;
+  }
+}
+#navbar .main-navigation {
+  display: none;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #navbar .main-navigation {
+    display: inline-flex;
+    margin-top: 0;
+    align-items: center;
+  }
+  #navbar .main-navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #navbar .main-navigation ul li {
+    display: inline-block;
+    background: linear-gradient(42.57deg, #1876DB 16.09%, #0099D7 93.52%);
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+  }
+  #navbar .main-navigation ul li:last-child {
+    background: #0099D7;
+    margin-left: 20px;
+  }
+  #navbar .main-navigation ul li a {
+    color: #fff;
+  }
+}
+
+/* ============================================================================
+   @COMPONENTS -> LANDING PAGE SEARCH
+   ========================================================================= */
+/**
+ * Lob Knowledge Base, Landing Page Search
+ *
+ * Currently being fed from:
+ * https://www.figma.com/file/MeIpacrlKSMyqSuCCu2zat/Knowledge-Base%2C-HelpJuice?node-id=12%3A141
+ *
+ * Last updated November 15, 2021
+ */
+header#header {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+header#header .container {
+  text-align: center;
+}
+header#header .container form.search-form {
+  margin-top: 35px;
+  border-radius: 2px;
+  border: 1px solid #D0D0D0;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #FFFFFF;
+  padding: 0 20px;
+}
+header#header .container form.search-form input {
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #27333C;
+  flex-basis: 100%;
+}
+@media only screen and (max-width: 767px) {
+  header#header .container form.search-form input {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+header#header .container form.search-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #D0D0D0;
+}
+@media only screen and (max-width: 767px) {
+  header#header .container form.search-form ::-webkit-input-placeholder {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+header#header .container form.search-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #D0D0D0;
+}
+@media only screen and (max-width: 767px) {
+  header#header .container form.search-form ::-moz-placeholder {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+header#header .container form.search-form :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #D0D0D0;
+}
+@media only screen and (max-width: 767px) {
+  header#header .container form.search-form :-ms-input-placeholder {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+header#header .container form.search-form :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Larsseit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #D0D0D0;
+}
+@media only screen and (max-width: 767px) {
+  header#header .container form.search-form :-moz-placeholder {
+    font-family: "Larsseit", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ============================================================================
+   @COMPONENTS -> GLOBAL FOOTER
+   ========================================================================= */
+/**
+ * Lob Knowledge Base, Global Footer
+ *
+ * Currently being fed from:
+ * https://www.figma.com/file/MeIpacrlKSMyqSuCCu2zat/Knowledge-Base%2C-HelpJuice?node-id=12%3A141
+ *
+ * Last updated November 15, 2021
+ */
+footer#footer {
+  background: linear-gradient(33.13deg, #415F80 12.29%, #447185 91.18%), #C4C4C4;
+  position: relative;
+}
+footer#footer .container {
+  display: flex;
+  padding: 35px 0 27px;
+  justify-content: space-between;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+footer#footer .container p {
+  color: #FFFFFF;
+  opacity: 50%;
+}
+footer#footer .container ul > li {
+  list-style-type: none;
+  display: inline-block;
+}
+footer#footer .container ul > li:not(:first-child) {
+  margin-left: 30px;
+}
+footer#footer .container ul > li a {
+  color: #FFFFFF;
+}
+footer#footer .container ul > li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFFFFF;
+}
+@media only screen and (max-width: 1279px) {
+  footer#footer .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer#footer .container p {
+    margin-top: 10px;
+  }
+  footer#footer .container ul {
+    text-align: center;
+  }
+  footer#footer .container ul > li {
+    padding: 10px 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer#footer .container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  footer#footer .container ul {
+    text-align: left;
+  }
+  footer#footer .container ul > li {
+    display: block;
+    padding: 10px 0 0;
+  }
+  footer#footer .container ul > li:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
+/* 
+ * Landing Page styles
+ */
+.container {
+  max-width: 1170px;
+  width: 84%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1279px) {
+  .container {
+    width: 87.5%;
+  }
+}
+.container .main-content {
+  width: 84%;
+  position: relative;
+}
+
+#question-page #navbar {
+  box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.024);
+  border: 1px solid #E5E5E5;
+}
+#question-page .container {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  align-items: stretch;
+  display: flex;
+  max-width: none;
+  margin: 0 auto;
+  width: 100%;
+}
+#question-page .container .sidebar-nav {
+  display: flex;
+  flex-shrink: 0;
+  padding-top: 50px;
+  padding-right: 50px;
+  width: max(300px, ((100vw - 910px) / 2) - 0px);
+  justify-content: flex-end;
+  border-right-color: #d3dce4;
+  border-right-width: 1px;
+  background-color: #EBF0F6;
+}
+#question-page .container .sidebar-nav ul {
+  list-style-type: none;
+}
+#question-page .container .sidebar-nav ul li {
+  margin-top: 12px;
+}
+#question-page .container .sidebar-nav ul li a {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0099D7;
+}
+#question-page .container .sidebar-nav ul li a:hover {
+  color: #1876DB;
+}
+#question-page .container .sidebar-nav ul li.category-heading {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.03em;
+  font-variant: all-small-caps;
+  color: #1876DB;
+}
+#question-page .container .sidebar-nav ul li.category-heading:not(:first-child) {
+  margin-top: 70px;
+}
+#question-page .container .article-item {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+#question-page .container .article-item header,
+#question-page .container .article-item #body-content,
+#question-page .container .article-item #related-articles,
+#question-page .container .article-item footer {
+  max-width: 75%;
+}
+#question-page .container .article-item #body-content {
+  max-width: 75%;
+}
+#question-page .container .article-item #body-content h2 {
+  margin-top: 50px;
+  border-top: 1px solid #EBF0F6;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#question-page .container .article-item #body-content li {
+  line-height: 50px;
+}
+#question-page .container .article-item #body-content p {
+  line-height: 30px;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents {
+  border-left: 1px solid #EBF0F6;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents .fa-trash-alt, #question-page .container .article-item #body-content .hj-table-of-contents .update-toc {
+  display: none;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents h3 {
+  font-family: "Larsseit", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.03em;
+  font-variant: all-small-caps;
+  color: #27333C;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents a {
+  font-family: "Larsseit", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0099D7;
+  display: block;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents a:hover {
+  color: #1876DB;
+}
+#question-page .container .article-item #body-content .hj-table-of-contents a.active {
+  color: #1876DB;
+  font-weight: 500;
+}
+@media only screen and (max-width: 1279px) {
+  #question-page .container .article-item #body-content .hj-table-of-contents {
+    display: none;
+  }
+}
+#question-page .container .article-item .related-articles {
+  margin-top: 50px;
+  border-top: 1px solid #EBF0F6;
+  padding-top: 30px;
+}
+#question-page .container .article-item .related-articles h3 {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.03em;
+  font-variant: all-small-caps;
+  color: #27333C;
+}
+#question-page .container .article-item footer.was-this-helpful {
+  margin-top: 50px;
+  border-top: 1px solid #EBF0F6;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#question-page .container .article-item footer.was-this-helpful span {
+  font-size: 16px;
+}
