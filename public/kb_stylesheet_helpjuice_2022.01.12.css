@@ -2916,29 +2916,6 @@ i.line-break {
 }
 
 /* ============================================================================
-   @SETTINGS -> TYPOGRAPHY
-   ========================================================================= */
-/**
-* Lob Brand Typography
-*
-* Currently being fed from:
-* https://www.lob.com/style-guide
-*
-* Last updated November 12, 2021
-*/
-/** =====================================
-	VARIABLES
-	================================== */
-html, body {
-  font-family: Larsseit, sans-serif;
-  font-size: 16px;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 24px;
-}
-
-/* ============================================================================
    @SHARED -> COLORS
    ========================================================================= */
 /**
@@ -3057,6 +3034,37 @@ html, body {
   height: 17.8px;
   width: 18.06px;
   background-size: 100% 17.8px;
+}
+
+/* ============================================================================
+   @SETTINGS -> TYPOGRAPHY
+   ========================================================================= */
+/**
+* Lob Brand Typography
+*
+* Currently being fed from:
+* https://www.lob.com/style-guide
+*
+* Last updated November 12, 2021
+*/
+/** =====================================
+	VARIABLES
+	================================== */
+html, body {
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 24px;
+}
+
+a {
+  color: #0099D7;
+}
+
+a:hover {
+  color: #1876DB;
 }
 
 /* ============================================================================
@@ -3267,7 +3275,7 @@ h6, .typography-h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.standard-link {
+.standard-link, a {
   color: #0099D7;
   font-family: "Larsseit", sans-serif;
   font-size: 16px;
@@ -3276,7 +3284,7 @@ h6, .typography-h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.standard-link:hover {
+.standard-link:hover, a:hover {
   color: #1876DB;
 }
 
@@ -3371,17 +3379,17 @@ h6, .typography-h6 {
   align-content: space-between;
   justify-content: space-between;
 }
-.cards-list .card header {
-  margin-bottom: 50px;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
+.cards-list .card h3 {
+  padding: 10px 0;
 }
 .cards-list .card p {
   margin-bottom: 72px;
 }
 .cards-list .card ul > li {
   list-style-type: none;
+}
+.cards-list .card .icon {
+  margin-right: 12px;
 }
 
 /* ============================================================================
@@ -3396,7 +3404,7 @@ h6, .typography-h6 {
  * Last updated December 7, 2021
  */
 .section-featured-articles .featured-articles-list {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .section-featured-articles .link-underline {
   color: #1876DB;
@@ -3427,18 +3435,13 @@ h6, .typography-h6 {
 #navbar .container {
   position: relative;
   padding: 20px;
-}
-@media (min-width: 768px) {
-  #navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media (min-width: 1280px) {
-  #navbar .container {
-    padding: 26px 0;
-  }
+  width: 100%;
+  max-width: 1440px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
 }
 #navbar #branding .logo {
   display: flex;
@@ -3514,7 +3517,7 @@ h6, .typography-h6 {
  * Last updated November 15, 2021
  */
 header#header {
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
 }
@@ -3522,14 +3525,15 @@ header#header .container {
   text-align: center;
 }
 header#header .container form.search-form {
-  margin-top: 35px;
+  margin: 35px auto 0;
   border-radius: 2px;
-  border: 1px solid #D0D0D0;
+  border: 1px solid #D3DCE4;
   display: flex;
   align-items: center;
   height: 50px;
   background-color: #FFFFFF;
   padding: 0 20px;
+  width: 60%;
 }
 header#header .container form.search-form input {
   font-family: "Larsseit", sans-serif;
@@ -3559,7 +3563,7 @@ header#header .container form.search-form ::-webkit-input-placeholder {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #D0D0D0;
+  color: #D3DCE4;
 }
 @media only screen and (max-width: 767px) {
   header#header .container form.search-form ::-webkit-input-placeholder {
@@ -3579,7 +3583,7 @@ header#header .container form.search-form ::-moz-placeholder {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #D0D0D0;
+  color: #D3DCE4;
 }
 @media only screen and (max-width: 767px) {
   header#header .container form.search-form ::-moz-placeholder {
@@ -3599,7 +3603,7 @@ header#header .container form.search-form :-ms-input-placeholder {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #D0D0D0;
+  color: #D3DCE4;
 }
 @media only screen and (max-width: 767px) {
   header#header .container form.search-form :-ms-input-placeholder {
@@ -3619,7 +3623,7 @@ header#header .container form.search-form :-moz-placeholder {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #D0D0D0;
+  color: #D3DCE4;
 }
 @media only screen and (max-width: 767px) {
   header#header .container form.search-form :-moz-placeholder {
@@ -3726,7 +3730,7 @@ footer#footer .container ul > li a:hover {
   position: relative;
 }
 
-#question-page #navbar {
+.question_page #navbar {
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
@@ -3734,7 +3738,7 @@ footer#footer .container ul > li a:hover {
   box-shadow: 0px 5px 4px 1px #00000006;
   border: 1px solid #E5E5E5;
 }
-#question-page .container {
+.question_page #question-page .container {
   flex-direction: row;
   flex-grow: 1;
   flex-shrink: 1;
@@ -3745,81 +3749,85 @@ footer#footer .container ul > li a:hover {
   margin: 0 auto;
   width: 100%;
 }
-#question-page .container .sidebar-nav {
+.question_page #question-page .container .sidebar-nav {
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
   display: flex;
   flex-shrink: 0;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-right: 50px;
-  padding-bottom: 88px;
-  width: max(300px, ((100vw - 910px) / 2) - 0px);
   justify-content: flex-end;
-  border-right-color: #d3dce4;
+  border-right-color: #D3DCE4;
   border-right-width: 1px;
   background-color: #EBF0F6;
   flex: 0 1 400px;
   width: 400px;
 }
-#question-page .container .sidebar-nav ul {
+.question_page #question-page .container .sidebar-nav ul {
   list-style-type: none;
 }
-#question-page .container .sidebar-nav ul li {
-  margin-top: 12px;
+.question_page #question-page .container .sidebar-nav ul li {
+  margin-top: 10px;
 }
-#question-page .container .sidebar-nav ul li a {
+.question_page #question-page .container .sidebar-nav ul li:last-child a {
+  padding-bottom: 200px;
+}
+.question_page #question-page .container .sidebar-nav ul li a {
   font-family: "Larsseit", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #324350;
+}
+.question_page #question-page .container .sidebar-nav ul li a:hover {
   color: #0099D7;
 }
-#question-page .container .sidebar-nav ul li a:hover {
-  color: #1876DB;
-}
-#question-page .container .sidebar-nav ul li.category-heading {
+.question_page #question-page .container .sidebar-nav ul li.category-heading {
   font-family: "Larsseit", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.03em;
   font-variant: all-small-caps;
-  color: #1876DB;
+  color: #324350;
 }
-#question-page .container .sidebar-nav ul li.category-heading:not(:first-child) {
+.question_page #question-page .container .sidebar-nav ul li.category-heading:not(:first-child) {
   margin-top: 70px;
 }
-#question-page .container .article-item {
+.question_page #question-page .container .article-item {
   position: relative;
   padding-top: 50px;
   padding-left: 50px;
   flex: 0 1 calc(100% - 400px);
   margin-left: 400px;
 }
-#question-page .container .article-item header,
-#question-page .container .article-item #body-content,
-#question-page .container .article-item #related-articles,
-#question-page .container .article-item footer {
+.question_page #question-page .container .article-item header,
+.question_page #question-page .container .article-item #body-content,
+.question_page #question-page .container .article-item #related-articles,
+.question_page #question-page .container .article-item footer {
   max-width: 75%;
 }
-#question-page .container .article-item #body-content {
+.question_page #question-page .container .article-item #body-content {
   max-width: 75%;
 }
-#question-page .container .article-item #body-content h2 {
+.question_page #question-page .container .article-item #body-content h2 {
   margin-top: 50px;
   border-top: 1px solid #EBF0F6;
   padding-top: 50px;
   padding-bottom: 30px;
 }
-#question-page .container .article-item #body-content li {
+.question_page #question-page .container .article-item #body-content li {
   line-height: 50px;
 }
-#question-page .container .article-item #body-content p {
+.question_page #question-page .container .article-item #body-content p {
   line-height: 30px;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents {
   border-left: 1px solid #EBF0F6;
   padding-left: 24px;
   padding-bottom: 10px;
@@ -3828,10 +3836,10 @@ footer#footer .container ul > li a:hover {
   width: 20%;
   box-sizing: border-box;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents .fa-trash-alt, #question-page .container .article-item #body-content .hj-table-of-contents .update-toc {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents .fa-trash-alt, .question_page #question-page .container .article-item #body-content .hj-table-of-contents .update-toc {
   display: none;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents h3 {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents h3 {
   font-family: "Larsseit", sans-serif;
   font-size: 14px;
   line-height: 30px;
@@ -3842,7 +3850,7 @@ footer#footer .container ul > li a:hover {
   font-variant: all-small-caps;
   color: #27333C;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents a {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents a {
   font-family: "Larsseit", sans-serif;
   font-size: 14px;
   line-height: 30px;
@@ -3852,24 +3860,24 @@ footer#footer .container ul > li a:hover {
   color: #0099D7;
   display: block;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents a:hover {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents a:hover {
   color: #1876DB;
 }
-#question-page .container .article-item #body-content .hj-table-of-contents a.active {
+.question_page #question-page .container .article-item #body-content .hj-table-of-contents a.active {
   color: #1876DB;
   font-weight: 500;
 }
 @media only screen and (max-width: 1279px) {
-  #question-page .container .article-item #body-content .hj-table-of-contents {
+  .question_page #question-page .container .article-item #body-content .hj-table-of-contents {
     display: none;
   }
 }
-#question-page .container .article-item .related-articles {
+.question_page #question-page .container .article-item .related-articles {
   margin-top: 50px;
   border-top: 1px solid #EBF0F6;
   padding-top: 30px;
 }
-#question-page .container .article-item .related-articles h3 {
+.question_page #question-page .container .article-item .related-articles h3 {
   font-family: "Larsseit", sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -3880,7 +3888,7 @@ footer#footer .container ul > li a:hover {
   font-variant: all-small-caps;
   color: #27333C;
 }
-#question-page .container .article-item footer.was-this-helpful {
+.question_page #question-page .container .article-item footer.was-this-helpful {
   margin-top: 50px;
   border-top: 1px solid #EBF0F6;
   padding-top: 20px;
@@ -3888,6 +3896,9 @@ footer#footer .container ul > li a:hover {
   display: flex;
   justify-content: space-between;
 }
-#question-page .container .article-item footer.was-this-helpful span {
+.question_page #question-page .container .article-item footer.was-this-helpful span {
   font-size: 16px;
+}
+.question_page #question-page .container .article-item footer.was-this-helpful .icon-comment {
+  margin-left: 50px;
 }
